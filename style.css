@@ -1,0 +1,951 @@
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: white;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.menu {
+    display: flex;
+    padding: 34px 0 0 34px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    list-style-type: none;
+}
+
+
+.menu li a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Cabin';
+    font-size: 14px;
+}
+
+#firstpart {
+    display: flex;
+}
+
+#secondpart {
+    display: flex;
+}
+
+nav .logo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+}
+
+nav .logo .img1 {
+    width: 51px;
+    height: 35px;
+    padding: 8px 0 0 123px;
+
+}
+
+nav .logo .img2 {
+    width: 59px;
+    height: 25px;
+    padding: 1px 0 0 119px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.secondarymenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 33px 118px 0 0;
+
+}
+
+.img3 {
+    width: 14px;
+    height: 14px;
+    padding: 0 0px 0 10px;
+
+}
+
+.img4 {
+    width: 9.9px;
+    height: 9.9px;
+    padding: 9.9px 10px 0 0px;
+    margin-left: -3px;
+
+
+}
+
+.img5 {
+    width: 17px;
+    height: 18px;
+    padding: 0 10px 0 10px;
+
+
+}
+
+.img6 {
+    height: 17px;
+    width: 17px;
+    padding: 0 10px 0 10px;
+
+
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    padding-right: 13%;
+    padding-left: 13%;
+
+}
+
+.img7 {
+    object-fit: contain;
+    width: 100%;
+    max-height: 490px;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}
+
+.col1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width:50%;
+
+}
+
+.col2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction:column;
+    width:50%;
+
+}
+
+.col2 h1 {
+    font-family: 'Fjalla One';
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 30px 0 5px 36px;
+
+}
+
+.col2 h2 {
+    font-family: 'Fjalla One';
+    font-weight: 400;
+    font-size: 25px;
+    color: #4374EF;
+    padding: 20px 0px 20px 39px;
+
+}
+
+.col2 p.label {
+    font-family: 'Cabin';
+    font-size: 13px;
+    color: #6C6C6C;
+    padding: 5px 0 13px 0;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.button {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #4374EF;
+    border-radius: 37px;
+    font-family: 'Cabin';
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 10px 0px 20px 0px;
+    background: #4374EF;
+
+}
+
+.lightbutton {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #4374EF;
+    border-radius: 37px;
+    font-family: 'Cabin';
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #4374EF;
+    margin: 10px 0px 20px 0px;
+    background: #ffffff;
+
+}
+
+.button#add {
+    border-radius: 3px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#add p {
+    display: inline-block;
+    padding: 10px 15px 10px 15px;
+    font-family: 'Fjalla One';
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+#add div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+#container {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 11000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fjalla One';
+    font-weight: 400;
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+
+#productinfos {
+    padding-left: 35px;
+}
+
+#description {
+    font-family: 'Cabin';
+    line-height: 160%;
+    color: #525252;
+    margin-bottom:35px;
+}
+
+.lastButton {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+
+#basket {
+    width: 65%;
+    border-radius: 3px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+
+    margin-bottom: 4px;
+    padding: 15px 0px 15px 0px;
+}
+
+#buy {
+    width: 65%;
+    border-radius: 3px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+
+    padding: 15px 0px 15px 0px;
+}
+
+.content_comment {
+    /* padding: 0 418px 0 418px; */
+    /* margin: auto; */
+    /* text-align: center; */
+    margin-top: 218px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_comment H2 {
+    font-family: 'Fjalla One';
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 10px 0 4px 0;
+}
+
+.content_comment H3 {
+    font-family: 'Cabin';
+    font-weight: 600;
+    font-size: 18px;
+    color: #4374EF;
+    margin-top: 4px;
+}
+
+.content_comment #div_comment {
+    background-color: #F6F8FC;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 0 0 23px 0;
+    width: 42%;
+
+}
+
+#div_comment div {
+    display: flex;
+
+}
+
+#comment {
+    font-family: 'Cabin';
+    font-weight: 600;
+    font-size: 15px;
+    color: #3C3C3C;
+    text-align: left;
+    width: 90%;
+}
+
+#rate {
+    font-family: 'Cabin';
+    font-weight: 700;
+    font-size: 16px;
+    color: #4374EF;
+    width: 10%;
+
+}
+
+#author {
+    font-family: 'Cabin';
+    font-weight: 600;
+    font-size: 15px;
+    color: #B5B5B5;
+    text-align: left;
+
+
+}
+
+footer {
+    margin-top: 200px;
+}
+
+
+footer .logo .img1 {
+    width: 124px;
+    height: 86px;
+    display: block;
+    padding-left: 135px;
+}
+
+footer .logo .img2 {
+    width: 157px;
+    height: 70px;
+    display: block;
+    padding-left: 119px;
+}
+
+#end {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footermenu {
+    list-style-type: none;
+}
+
+.footermenu li a {
+    text-decoration: none;
+    font-family: 'Cabin';
+    font-weight: 400;
+    line-height: 200%;
+    color: #000000;
+    padding-left: 167px;
+}
+
+
+
+footer p {
+    font-family: 'Cabin';
+    font-weight: 400;
+    font-size: 12px;
+    color: #525252;
+    text-align: center;
+}
+
+@media (max-width:393px) {
+    .menu {
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 36%;
+        margin-right: 3.8%;
+        flex-wrap: wrap;
+    }
+
+    nav .logo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    nav .logo .img1 {
+        width: 33px;
+        height: 23px;
+        padding: 26px 0 0 0px;
+
+    }
+
+    nav .logo .img2 {
+        width: 59px;
+        height: 24px;
+        padding: 25px 0 0 0;
+    }
+
+
+    .secondarymenu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 33px 0 0 36px;
+
+    }
+
+    .img3 {
+        width: 14px;
+        height: 14px;
+        padding: 0 0px 0 10px;
+
+    }
+
+    .img4 {
+        width: 9.9px;
+        height: 9.9px;
+        padding: 9.9px 10px 0 0px;
+        margin-left: -3px;
+
+
+    }
+
+    .img5 {
+        display: none;
+
+
+    }
+
+    .img6 {
+        height: 17px;
+        width: 17px;
+        padding: 0 10px 0 10px;
+
+
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        margin-top: 70px;
+        padding-right: 25px;
+        padding-left: 25px;
+
+    }
+
+    .img7 {
+        height: 83%;
+        object-fit: contain;
+    }
+
+    .col1 {
+        display: flex;
+        justify-content: center;
+        width:100%;
+
+    }
+
+    .col2 {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        padding: 0;
+    }
+
+    .col2 h1 {
+        font-size: 20px;
+        padding: 30px 0 8px 0px;
+        margin: 0;
+    }
+
+    .col2 h2 {
+        font-family: 'Fjalla One';
+        font-weight: 400;
+        font-size: 25px;
+        color: #4374EF;
+        padding: 0px 0px 2px 0px;
+        margin: 0;
+        text-align: left;
+    }
+
+    #productinfos {
+        padding-left: 0;
+    }
+
+    .col2 p.label {
+        font-family: 'Cabin';
+        font-size: 13px;
+        color: #6C6C6C;
+        padding: 25px 0 10px 0;
+    }
+
+    .button#add {
+        border-radius: 3px;
+        margin-bottom: 20px;
+        margin-top: 36px;
+        padding: 0;
+    }
+
+    #description {
+        font-family: 'Cabin';
+        font-size: 16px;
+        line-height: 160%;
+        color: #525252;
+    }
+
+    #basket {
+        width: 100%;
+        border-radius: 3px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        padding: 15px 0px 15px 0px;
+    }
+
+    #buy {
+        width: 100%;
+        border-radius: 3px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 0px;
+        padding: 15px 0px 15px 0px;
+    }
+
+
+    .content_comment {
+        padding: 0;
+        text-align: center;
+        margin-top: 74px;
+        padding: 0 25px 0 25px;
+    }
+
+    .content_comment H2 {
+        font-family: 'Fjalla One';
+        font-weight: 400;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #000000;
+        margin: 10px 0 4px 0;
+    }
+
+    .content_comment H3 {
+        font-family: 'Cabin';
+        font-weight: 600;
+        font-size: 18px;
+        color: #4374EF;
+        margin-top: 4px;
+    }
+
+    .content_comment #div_comment {
+        background-color: #F6F8FC;
+        border-radius: 3px;
+        padding: 20px;
+        margin: 0 0 23px 0;
+        width:87%;
+    }
+
+    #div_comment div {
+        display: flex;
+
+    }
+
+    #comment {
+        font-family: 'Cabin';
+        font-weight: 600;
+        font-size: 15px;
+        color: #3C3C3C;
+        text-align: left;
+        width: 90%;
+    }
+
+    #rate {
+        font-family: 'Cabin';
+        font-weight: 700;
+        font-size: 16px;
+        color: #4374EF;
+        width: 10%;
+
+    }
+
+    #author {
+        font-family: 'Cabin';
+        font-weight: 600;
+        font-size: 15px;
+        color: #B5B5B5;
+        text-align: left;
+
+
+    }
+
+    footer {
+        margin-top: 74px;
+    }
+
+    footer .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .logo .img1 {
+        width: 51px;
+        height: 35px;
+        display: flex;
+        padding: 0;
+    }
+
+    footer .logo .img2 {
+        width: 59px;
+        height: 25px;
+        display: flex;
+        padding: 0;
+        margin-bottom: 44px;
+    }
+
+    #end {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footermenu {
+        list-style-type: none;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footermenu li a {
+        text-decoration: none;
+        font-family: 'Cabin';
+        font-weight: 400;
+        line-height: 200%;
+        color: #000000;
+        padding-left: 0;
+    }
+
+
+
+    footer p {
+        font-family: 'Cabin';
+        font-weight: 400;
+        font-size: 12px;
+        color: #525252;
+        text-align: center;
+        margin-top: 44px;
+    }
+
+}
+
+@media (max-width:975px) and (min-width:394px){
+
+    .menu {
+        display: none;
+    }
+
+   
+    .secondarymenu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 33px 0 0 36px;
+
+    }
+
+    .img3 {
+        width: 14px;
+        height: 14px;
+        padding: 0 0px 0 10px;
+
+    }
+
+    .img4 {
+        width: 9.9px;
+        height: 9.9px;
+        padding: 9.9px 10px 0 0px;
+        margin-left: -3px;
+
+
+    }
+
+    .img5 {
+        display: none;
+
+
+    }
+
+    .img6 {
+        height: 17px;
+        width: 17px;
+        padding: 0 10px 0 10px;
+
+
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        margin-top: 70px;
+        padding-right: 25px;
+        padding-left: 25px;
+
+    }
+
+    .img7 {
+        height: 83%;
+        object-fit: contain;
+    }
+
+    .col1 {
+        display: flex;
+        justify-content: center;
+        width:100%;
+
+    }
+
+    .col2 {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        padding: 0;
+    }
+
+    .col2 h1 {
+        font-size: 20px;
+        padding: 30px 0 8px 0px;
+        margin: 0;
+    }
+
+    .col2 h2 {
+        font-family: 'Fjalla One';
+        font-weight: 400;
+        font-size: 25px;
+        color: #4374EF;
+        padding: 0px 0px 2px 0px;
+        margin: 0;
+        text-align: left;
+    }
+
+    #productinfos {
+        padding-left: 0;
+    }
+
+    .col2 p.label {
+        font-family: 'Cabin';
+        font-size: 13px;
+        color: #6C6C6C;
+        padding: 25px 0 10px 0;
+    }
+
+    .button#add {
+        border-radius: 3px;
+        margin-bottom: 20px;
+        margin-top: 36px;
+        padding: 0;
+    }
+
+    #description {
+        font-family: 'Cabin';
+        font-size: 16px;
+        line-height: 160%;
+        color: #525252;
+    }
+
+    #basket {
+        width: 100%;
+        border-radius: 3px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        padding: 15px 0px 15px 0px;
+    }
+
+    #buy {
+        width: 100%;
+        border-radius: 3px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 0px;
+        padding: 15px 0px 15px 0px;
+    }
+
+    .content_comment {
+        padding: 0;
+        text-align: center;
+        margin-top: 74px;
+        padding: 0 25px 0 25px;
+    }
+
+    .content_comment H2 {
+        font-family: 'Fjalla One';
+        font-weight: 400;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #000000;
+        margin: 10px 0 4px 0;
+    }
+
+    .content_comment H3 {
+        font-family: 'Cabin';
+        font-weight: 600;
+        font-size: 18px;
+        color: #4374EF;
+        margin-top: 4px;
+    }
+
+    .content_comment #div_comment {
+        background-color: #F6F8FC;
+        border-radius: 3px;
+        padding: 20px;
+        margin: 0 0 23px 0;
+        width:87%;
+    }
+
+    #div_comment div {
+        display: flex;
+
+    }
+
+    #comment {
+        font-family: 'Cabin';
+        font-weight: 600;
+        font-size: 15px;
+        color: #3C3C3C;
+        text-align: left;
+        width: 90%;
+    }
+
+    #rate {
+        font-family: 'Cabin';
+        font-weight: 700;
+        font-size: 16px;
+        color: #4374EF;
+        width: 10%;
+
+    }
+
+    #author {
+        font-family: 'Cabin';
+        font-weight: 600;
+        font-size: 15px;
+        color: #B5B5B5;
+        text-align: left;
+
+
+    }
+
+    footer {
+        margin-top: 74px;
+    }
+
+    footer .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .logo .img1 {
+        width: 51px;
+        height: 35px;
+        display: flex;
+        padding: 0;
+    }
+
+    footer .logo .img2 {
+        width: 59px;
+        height: 25px;
+        display: flex;
+        padding: 0;
+        margin-bottom: 44px;
+    }
+
+    #end {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footermenu {
+        list-style-type: none;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footermenu li a {
+        text-decoration: none;
+        font-family: 'Cabin';
+        font-weight: 400;
+        line-height: 200%;
+        color: #000000;
+        padding-left: 0;
+    }
+
+
+
+    footer p {
+        font-family: 'Cabin';
+        font-weight: 400;
+        font-size: 12px;
+        color: #525252;
+        text-align: center;
+        margin-top: 44px;
+    }
+
+}
