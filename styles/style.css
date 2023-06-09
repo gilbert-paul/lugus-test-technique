@@ -10,6 +10,14 @@ header {
     flex-wrap: wrap;
 }
 
+/*HEADER & MENU */
+
+.hamburger {
+    width: 17px;
+    height: 12px;
+    padding-top: 31px;
+    display: none;
+}
 
 .menu {
     display: flex;
@@ -18,7 +26,6 @@ header {
     margin-top: 0px;
     list-style-type: none;
 }
-
 
 .menu li a {
     padding-right: 20px;
@@ -40,18 +47,15 @@ nav .logo {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
-
 }
 
-nav .logo .img1 {
+nav .logo .mountain {
     width: 51px;
     height: 35px;
     padding: 8px 0 0 123px;
-
 }
 
-nav .logo .img2 {
+nav .logo .TheSnowBorder {
     width: 59px;
     height: 25px;
     padding: 1px 0 0 119px;
@@ -68,42 +72,37 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 33px 118px 0 0;
-
+    padding: 33px 108px 0 0;
 }
 
-.img3 {
+/*Icon Secondary Menu */
+
+.circleGlass {
     width: 14px;
     height: 14px;
     padding: 0 0px 0 10px;
-
 }
 
-.img4 {
+.lineGlass {
     width: 9.9px;
     height: 9.9px;
     padding: 9.9px 10px 0 0px;
     margin-left: -3px;
-
-
 }
 
-.img5 {
+.profil {
     width: 17px;
     height: 18px;
     padding: 0 10px 0 10px;
-
-
 }
 
-.img6 {
+.cart {
     height: 17px;
     width: 17px;
     padding: 0 10px 0 10px;
-
-
 }
 
+/*CONTENT with 2 column*/
 
 .content {
     display: flex;
@@ -112,10 +111,18 @@ nav {
     margin-top: 70px;
     padding-right: 13%;
     padding-left: 13%;
-
 }
 
-.img7 {
+
+
+.column1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.snowBox {
     object-fit: contain;
     width: 100%;
     max-height: 490px;
@@ -124,48 +131,43 @@ nav {
     justify-content: center;
 }
 
-.col1 {
+.column2 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width:50%;
-
+    flex-direction: column;
+    width: 50%;
 }
 
-.col2 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction:column;
-    width:50%;
-
-}
-
-.col2 h1 {
+.column2 h1 {
     font-family: 'Fjalla One';
     font-weight: 400;
     font-size: 30px;
     text-transform: uppercase;
-    padding: 30px 0 5px 36px;
-
+    padding: 30px 0 5px 0px;
+    margin: 0;
 }
 
-.col2 h2 {
+.column2 h2 {
     font-family: 'Fjalla One';
     font-weight: 400;
     font-size: 25px;
     color: #4374EF;
-    padding: 20px 0px 20px 39px;
-
+    padding: 20px 0px 20px 0px;
+    margin: 0;
 }
 
-.col2 p.label {
+.column2 p.label {
     font-family: 'Cabin';
     font-size: 13px;
     color: #6C6C6C;
-    padding: 5px 0 13px 0;
-
+    padding: 5px 0 0px 0;
+    margin: 0;
 }
+
+
+/*Button with variant lightbutton and variant addbutton*/
+
 
 button {
     cursor: pointer;
@@ -181,7 +183,6 @@ button {
     color: #FFFFFF;
     margin: 10px 0px 20px 0px;
     background: #4374EF;
-
 }
 
 .lightbutton {
@@ -194,13 +195,12 @@ button {
     color: #4374EF;
     margin: 10px 0px 20px 0px;
     background: #ffffff;
-
 }
 
 .button#add {
     border-radius: 3px;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 17px;
     padding: 0;
 }
 
@@ -218,6 +218,7 @@ button {
     margin-right: 10px;
 }
 
+/*Content & div in column2*/
 
 #container {
     background-color: white;
@@ -235,7 +236,6 @@ button {
     font-weight: 400;
     font-size: 50px;
     text-transform: uppercase;
-
 }
 
 #productinfos {
@@ -246,13 +246,14 @@ button {
     font-family: 'Cabin';
     line-height: 160%;
     color: #525252;
-    margin-bottom:35px;
+    margin-bottom: 25px;
+    margin-top: 19px;
 }
 
 .lastButton {
-    display:flex;
-    flex-direction:column;
-    width:100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 #basket {
@@ -261,7 +262,6 @@ button {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
-
     margin-bottom: 4px;
     padding: 15px 0px 15px 0px;
 }
@@ -272,14 +272,13 @@ button {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
-
+    margin-top: 4px;
     padding: 15px 0px 15px 0px;
 }
 
+/*CONTENT about comments*/
+
 .content_comment {
-    /* padding: 0 418px 0 418px; */
-    /* margin: auto; */
-    /* text-align: center; */
     margin-top: 218px;
     display: flex;
     flex-direction: column;
@@ -301,20 +300,19 @@ button {
     font-size: 18px;
     color: #4374EF;
     margin-top: 4px;
+    margin-bottom: 30px;
 }
 
 .content_comment #div_comment {
     background-color: #F6F8FC;
     border-radius: 3px;
-    padding: 20px;
+    padding: 20px 20px 22px 20px;
     margin: 0 0 23px 0;
     width: 42%;
-
 }
 
 #div_comment div {
     display: flex;
-
 }
 
 #comment {
@@ -324,6 +322,7 @@ button {
     color: #3C3C3C;
     text-align: left;
     width: 90%;
+    margin: 0;
 }
 
 #rate {
@@ -332,7 +331,8 @@ button {
     font-size: 16px;
     color: #4374EF;
     width: 10%;
-
+    margin: 0;
+    text-align: right;
 }
 
 #author {
@@ -341,23 +341,25 @@ button {
     font-size: 15px;
     color: #B5B5B5;
     text-align: left;
-
-
+    margin-bottom: 0;
 }
+
+/*All about footer*/
+
 
 footer {
-    margin-top: 200px;
+    margin-top: 196px;
 }
 
 
-footer .logo .img1 {
+footer .logo .mountain {
     width: 124px;
     height: 86px;
     display: block;
     padding-left: 135px;
 }
 
-footer .logo .img2 {
+footer .logo .TheSnowBorder {
     width: 157px;
     height: 70px;
     display: block;
@@ -379,10 +381,8 @@ footer .logo .img2 {
     font-weight: 400;
     line-height: 200%;
     color: #000000;
-    padding-left: 167px;
+    padding-left: 150px;
 }
-
-
 
 footer p {
     font-family: 'Cabin';
@@ -390,78 +390,85 @@ footer p {
     font-size: 12px;
     color: #525252;
     text-align: center;
+    margin-top: 111px;
 }
 
-@media (max-width:393px) {
+/* MOBILE CSS - < 767PX */
+
+@media (max-width:767px) {
+    header {
+        height: 70px;
+    }
+
     .menu {
         display: none;
     }
+
+    .hamburger {
+        width: 17px;
+        height: 12px;
+        padding-top: 31px;
+        display: flex;
+        margin-right: 110px;
+    }
+
     nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: 36%;
-        margin-right: 3.8%;
         flex-wrap: wrap;
+    }
+
+    #firstpart {
+        margin-left: 15px;
     }
 
     nav .logo {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
     }
 
-    nav .logo .img1 {
+    nav .logo .mountain {
         width: 33px;
         height: 23px;
         padding: 26px 0 0 0px;
-
     }
 
-    nav .logo .img2 {
+    nav .logo .TheSnowBorder {
         width: 59px;
         height: 24px;
         padding: 25px 0 0 0;
     }
 
-
     .secondarymenu {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 33px 0 0 36px;
-
+        padding: 33px 0 0 1px;
     }
 
-    .img3 {
+    .circleGlass {
         width: 14px;
         height: 14px;
         padding: 0 0px 0 10px;
-
     }
 
-    .img4 {
+    .lineGlass {
         width: 9.9px;
         height: 9.9px;
         padding: 9.9px 10px 0 0px;
         margin-left: -3px;
-
-
     }
 
-    .img5 {
+    .profil {
         display: none;
-
-
     }
 
-    .img6 {
+    .cart {
         height: 17px;
         width: 17px;
-        padding: 0 10px 0 10px;
-
-
+        padding: 0 29px 0 11px;
     }
 
     .content {
@@ -469,38 +476,38 @@ footer p {
         flex-direction: column;
         flex-wrap: nowrap;
         align-content: center;
-        margin-top: 70px;
+        margin-top: 23px;
         padding-right: 25px;
         padding-left: 25px;
-
     }
 
-    .img7 {
+    .snowBox {
         height: 83%;
+        max-height: 327px;
         object-fit: contain;
+        margin-bottom: 62px;
     }
 
-    .col1 {
+    .column1 {
         display: flex;
         justify-content: center;
-        width:100%;
-
+        width: 100%;
     }
 
-    .col2 {
+    .column2 {
         display: flex;
         flex-direction: column;
-        width:100%;
+        width: 100%;
         padding: 0;
     }
 
-    .col2 h1 {
+    .column2 h1 {
         font-size: 20px;
-        padding: 30px 0 8px 0px;
+        padding: 0px 0 8px 0px;
         margin: 0;
     }
 
-    .col2 h2 {
+    .column2 h2 {
         font-family: 'Fjalla One';
         font-weight: 400;
         font-size: 25px;
@@ -514,17 +521,25 @@ footer p {
         padding-left: 0;
     }
 
-    .col2 p.label {
+    .column2 p.label {
         font-family: 'Cabin';
         font-size: 13px;
         color: #6C6C6C;
-        padding: 25px 0 10px 0;
+        padding: 25px 0 0px 0;
+    }
+
+    .button {
+        margin: 10px 0px 0px 0px;
+    }
+
+    .lightbutton {
+        margin: 10px 0px 0px 0px;
     }
 
     .button#add {
         border-radius: 3px;
         margin-bottom: 20px;
-        margin-top: 36px;
+        margin-top: 56px;
         padding: 0;
     }
 
@@ -533,6 +548,8 @@ footer p {
         font-size: 16px;
         line-height: 160%;
         color: #525252;
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
 
     #basket {
@@ -556,7 +573,6 @@ footer p {
         padding: 15px 0px 15px 0px;
     }
 
-
     .content_comment {
         padding: 0;
         text-align: center;
@@ -578,20 +594,19 @@ footer p {
         font-weight: 600;
         font-size: 18px;
         color: #4374EF;
-        margin-top: 4px;
+        margin-top: 7px;
     }
 
     .content_comment #div_comment {
         background-color: #F6F8FC;
         border-radius: 3px;
-        padding: 20px;
-        margin: 0 0 23px 0;
-        width:87%;
+        padding: 15px 14px 15px 15px;
+        margin: 0 0 15px 0;
+        width: 87%;
     }
 
     #div_comment div {
         display: flex;
-
     }
 
     #comment {
@@ -609,7 +624,6 @@ footer p {
         font-size: 16px;
         color: #4374EF;
         width: 10%;
-
     }
 
     #author {
@@ -618,12 +632,11 @@ footer p {
         font-size: 15px;
         color: #B5B5B5;
         text-align: left;
-
-
+        margin-top: 10px;
     }
 
     footer {
-        margin-top: 74px;
+        margin-top: 59px;
     }
 
     footer .logo {
@@ -633,14 +646,14 @@ footer p {
         align-items: center;
     }
 
-    footer .logo .img1 {
+    footer .logo .mountain {
         width: 51px;
         height: 35px;
         display: flex;
         padding: 0;
     }
 
-    footer .logo .img2 {
+    footer .logo .TheSnowBorder {
         width: 59px;
         height: 25px;
         display: flex;
@@ -672,8 +685,6 @@ footer p {
         padding-left: 0;
     }
 
-
-
     footer p {
         font-family: 'Cabin';
         font-weight: 400;
@@ -682,54 +693,54 @@ footer p {
         text-align: center;
         margin-top: 44px;
     }
-
 }
 
-@media (max-width:975px) and (min-width:394px){
+/* CCS TABLET 768PX < XX < 978PX */
+
+@media (max-width:975px) and (min-width:768px) {
 
     .menu {
         display: none;
     }
 
-   
+    .hamburger {
+        width: 17px;
+        height: 12px;
+        padding: 31px 0 0 15px;
+        display: flex;
+        margin-right: 110px;
+    }
+
     .secondarymenu {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 33px 0 0 36px;
-
+        padding: 33px 0 0 1px;
     }
 
-    .img3 {
+    .circleGlass {
         width: 14px;
         height: 14px;
         padding: 0 0px 0 10px;
-
     }
 
-    .img4 {
+    .lineGlass {
         width: 9.9px;
         height: 9.9px;
         padding: 9.9px 10px 0 0px;
         margin-left: -3px;
-
-
     }
 
-    .img5 {
+    .profil {
         display: none;
-
-
     }
 
-    .img6 {
+    .cart {
         height: 17px;
         width: 17px;
-        padding: 0 10px 0 10px;
-
-
+        padding: 0 29px 0 11px;
     }
-    
+
     .content {
         display: flex;
         flex-direction: column;
@@ -738,35 +749,33 @@ footer p {
         margin-top: 70px;
         padding-right: 25px;
         padding-left: 25px;
-
     }
 
-    .img7 {
+    .snowBox {
         height: 83%;
         object-fit: contain;
     }
 
-    .col1 {
+    .column1 {
         display: flex;
         justify-content: center;
-        width:100%;
-
+        width: 100%;
     }
 
-    .col2 {
+    .column2 {
         display: flex;
         flex-direction: column;
-        width:100%;
+        width: 100%;
         padding: 0;
     }
 
-    .col2 h1 {
+    .column2 h1 {
         font-size: 20px;
         padding: 30px 0 8px 0px;
         margin: 0;
     }
 
-    .col2 h2 {
+    .column2 h2 {
         font-family: 'Fjalla One';
         font-weight: 400;
         font-size: 25px;
@@ -780,7 +789,7 @@ footer p {
         padding-left: 0;
     }
 
-    .col2 p.label {
+    .column2 p.label {
         font-family: 'Cabin';
         font-size: 13px;
         color: #6C6C6C;
@@ -851,12 +860,11 @@ footer p {
         border-radius: 3px;
         padding: 20px;
         margin: 0 0 23px 0;
-        width:87%;
+        width: 87%;
     }
 
     #div_comment div {
         display: flex;
-
     }
 
     #comment {
@@ -874,7 +882,6 @@ footer p {
         font-size: 16px;
         color: #4374EF;
         width: 10%;
-
     }
 
     #author {
@@ -883,8 +890,6 @@ footer p {
         font-size: 15px;
         color: #B5B5B5;
         text-align: left;
-
-
     }
 
     footer {
@@ -898,14 +903,14 @@ footer p {
         align-items: center;
     }
 
-    footer .logo .img1 {
+    footer .logo .mountain {
         width: 51px;
         height: 35px;
         display: flex;
         padding: 0;
     }
 
-    footer .logo .img2 {
+    footer .logo .TheSnowBorder {
         width: 59px;
         height: 25px;
         display: flex;
@@ -937,8 +942,6 @@ footer p {
         padding-left: 0;
     }
 
-
-
     footer p {
         font-family: 'Cabin';
         font-weight: 400;
@@ -947,5 +950,4 @@ footer p {
         text-align: center;
         margin-top: 44px;
     }
-
 }
