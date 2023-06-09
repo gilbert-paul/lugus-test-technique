@@ -5,19 +5,24 @@ async function getProduct() {
       method: "GET",
     }
   );
-  console.log(response);
   return response.json();
 }
 
 async function init() {
   var product = await getProduct();
-  console.log(product);
 
   //Contenu
 
   document.getElementById("price").innerHTML = product.price + " €";
   document.getElementById("description").innerHTML = product.description;
   document.getElementById("container").remove();
+  document.getElementById("blue").innerHTML = product.variants[0].color;
+  document.getElementById("yellow").innerHTML = product.variants[2].color;
+  document.getElementById("M").innerHTML = product.variants[0].size;
+  document.getElementById("L").innerHTML = product.variants[1].size;
+
+
+  
 
     function toggleVariantsImage() {
       var bluebuttonIsButton = bluebutton.classList.contains("button");
@@ -26,15 +31,24 @@ async function init() {
       var bluebuttonIsLightButton = bluebutton.classList.contains("lightbutton");
       var imageHTML = document.getElementById("imagesnow");
 
+    var variant = product.variants[0];  
     if (bluebuttonIsButton && MbuttonIsButton) {
-      imageHTML.setAttribute("src", product.variants[0].image);
+      imageHTML.setAttribute("src", product.variants[0].image)
+      variant = product.variants[0];
     } else if (bluebuttonIsButton && MbuttonIsLightButton) {
-      imageHTML.setAttribute("src", product.variants[1].image);
+      imageHTML.setAttribute("src", product.variants[1].image)
+      variant = product.variants[1];;
     } else if (bluebuttonIsLightButton && MbuttonIsButton) {
-      imageHTML.setAttribute("src", product.variants[2].image);
+      imageHTML.setAttribute("src", product.variants[2].image)
+      variant = product.variants[2];;
     } else {
-      imageHTML.setAttribute("src", product.variants[3].image);
+      imageHTML.setAttribute("src", product.variants[3].image)
+      variant = product.variants[3];;
     }
+
+    //Use this variant in cart process
+
+
   }
 
   const bluebutton = document.getElementById("blue");
@@ -148,3 +162,5 @@ async function init() {
 }
 
 init();
+
+
